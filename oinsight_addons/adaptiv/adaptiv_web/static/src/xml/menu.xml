@@ -36,9 +36,10 @@
     <t t-if="menu['children'].length">
       <li class="dropdown-header"><t t-esc="menu.name"/></li>
       <t t-foreach="menu['children']" t-as="child">
-        <t t-call="Menu.menu">
           <t t-set="menu" t-value="child"/>
-        </t>
+          <li class="oinsight-menu-child">
+            <t t-call="Menu.menu_link" />
+          </li>
       </t>
     </t>
     <t t-if="!menu['children'].length">

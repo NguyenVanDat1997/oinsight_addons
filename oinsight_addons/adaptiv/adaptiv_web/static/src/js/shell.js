@@ -185,7 +185,7 @@ var Shell = Widget.extend({
 var _instance = null;
 var getInstance = function() {
   return _instance;
-}
+};
 
 return {
   Shell: Shell,

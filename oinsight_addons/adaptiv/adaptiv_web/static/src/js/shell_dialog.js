@@ -254,7 +254,8 @@ odoo.define('adaptiv_web.shell_dialog', function(require) {
 
   return {
     ShellDialog: ShellDialog,
-    ShellDialogPane: ShellDialogPane
+    ShellDialogPane: ShellDialogPane,
+    Dialog:Dialog
   };
 
 });

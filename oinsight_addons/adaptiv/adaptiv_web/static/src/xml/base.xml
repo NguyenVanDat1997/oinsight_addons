@@ -34,9 +34,11 @@
       <div class="a_cp_bottom">
         <div class="o_cp_buttons"/>
         <div class="o_cp_sidebar"/>
-        <div class="btn-group o_search_options"/>
-        <div class="o_cp_pager"/>
-        <div class="btn-group btn-group-sm o_cp_switch_buttons"/>
+        <div class="oinsight-btn-group">
+            <div class="btn-group o_search_options"/>
+            <div class="o_cp_pager"/>
+            <div class="btn-group btn-group-sm o_cp_switch_buttons"/>
+        </div>
       </div>
     </div>
   </t>

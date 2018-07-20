@@ -7,13 +7,21 @@ body {
 }
 
 @keyframes fade {
-  0% { opacity: 0; }
-  100% { opacity: 1; }
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 
 @-webkit-keyframes fade {
-  0% { opacity: 0; }
-  100% { opacity: 1; }
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 
 .o_web_client {
@@ -83,7 +91,7 @@ body {
 
           .o-flex-display();
           .o-flex-flow(column, nowrap);
-          .o-flex(1, 0, 0);
+          .o-flex(1, 1, auto);
 
           > .container-fluid,
           > div:not([class]),
@@ -97,6 +105,15 @@ body {
           }
 
           > .o_view_manager_content {
+            .o-position-absolute(0, 0, 0, 0); // Get the 100% height of its flex parent
+            height: 100%;
+
+            .o_view_manager_content {
+              position: static; // Reset position for nested view managers
+              height: auto; // reset height inheritance for nested view managers
+            }
+          }
+          > .o_view_manager_content {
             > div {
               position: relative;
               overflow: auto;
@@ -105,7 +122,7 @@ body {
               .o-flex-display();
               .o-flex-flow(column, nowrap);
               .o-flex(1, 0, 0);
-              
+
               > div:not([class]) {
                 .o-flex-display();
                 .o-flex-flow(column, nowrap);
