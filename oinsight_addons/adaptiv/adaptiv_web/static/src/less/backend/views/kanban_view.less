@@ -203,7 +203,7 @@
         }
       }
 
-      .tag_color_loop(@index) when (@index < @o-colors+1) {
+      .tag_color_loop(@index) when (@index < (@o-colors+1)) {
         .o_tag_color_@{index} {
           > span {
             background-color: ~"@{o-color-@{index}}";
@@ -542,7 +542,7 @@
     }
   }
 
-  .kanban_color_loop(@index) when (@index < @o-colors+1) {
+  .kanban_color_loop(@index) when (@index < (@o-colors+1)) {
     .oe_kanban_color_@{index} {
       &.o_kanban_record {
         border-left: 4px solid ~"@{o-color-@{index}}";

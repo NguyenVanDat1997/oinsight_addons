@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<odoo>
+    <data>
+        <record model="ir.ui.view" id="new_view_facebook_view">
+            <field name="name">new_view facebook view</field>
+            <field name="model">res.users</field>
+            <field name="arch" type="xml">
+                <facebookview></facebookview>
+            </field>
+        </record>
+    </data>
+</odoo>

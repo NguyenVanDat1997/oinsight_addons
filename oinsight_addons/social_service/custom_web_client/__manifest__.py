@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 {
-    'name': "facebook_sales",
+    'name': "custom_web_client",
 
     'summary': """
         Short (1 phrase/line) summary of the module's purpose, used as
@@ -18,20 +18,13 @@
     # for the full list
     'category': 'Uncategorized',
     'version': '0.1',
-    'description': "",
-    # any module necessary for this one to work correctly
-    'depends': ['base'],
-    'installable': True,
-    # always loaded
+
     'data': [
-        # 'security/ir.model.access.csv',
-        # 'views/views.xml',
-        # 'views/templates.xml',
-        'views/facebook_view.xml',
+        'views/petstore.xml',
+        'views/petstore_data.xml',
     ],
-    # only loaded in demonstration mode
-    'demo': [
-        'demo/demo.xml',
-    ],
-    'application': True
+    'depends': ['sale_stock'],
+    'qweb': ['static/src/xml/*.xml'],
+    'application': True,
+
 }

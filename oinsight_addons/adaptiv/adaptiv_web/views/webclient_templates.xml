@@ -123,6 +123,7 @@
             <link rel="stylesheet" type="text/less"
                   href="/adaptiv_web/static/src/less/backend/views/calendar_view.less"/>
             <link rel="stylesheet" type="text/less" href="/adaptiv_web/static/src/less/backend/module_tweaks.less"/>
+            <!--oinsight team-->
             <link rel="stylesheet" type="text/less" href="/adaptiv_web/static/src/less/backend/oinsighht_control_panel.less"/>
         </xpath>
 
@@ -137,7 +138,9 @@
             <script type="application/javascript" src="/adaptiv_web/static/src/js/renderers/form_view.js"/>
             <script type="application/javascript" src="/adaptiv_web/static/src/js/renderers/res_config_settings.js"/>
             <script type="application/javascript" src="/adaptiv_web/static/src/js/debrand.js"/>
+            <!--oinsight team-->
             <script type="application/javascript" src="/adaptiv_web/static/src/js/oinsight_shell_dialog.js"/>
+            <script type="application/javascript" src="/adaptiv_web/static/src/js/widgets/oinsight_control_panel.js"/>
         </xpath>
         <xpath expr="script[@src='/web/static/src/js/chrome/web_client.js']" position="replace">
             <script type="application/javascript" src="/adaptiv_web/static/src/js/web_client.js"/>

@@ -1,8 +1,18 @@
 <odoo>
     <data>
+        <record model="ir.ui.view" id="facebook_sales_tree_view">
+            <field name="name">facebook_sales tree view</field>
+            <field name="model">facebook_sales.facebook_sales</field>
+            <field name="arch" type="xml">
+                <tree>
+                    <field name="name"/>
+                    <field name="value"/>
+                </tree>
+            </field>
+        </record>
         <!-- explicit list view definition -->
-        <record model="ir.ui.view" id="facebook_sales.list">
-            <field name="name">facebook_sales list</field>
+        <record model="ir.ui.view" id="facebook_sales_form_view">
+            <field name="name">facebook_sales form view</field>
             <field name="model">facebook_sales.facebook_sales</field>
             <field name="arch" type="xml">
                 <form>
@@ -15,28 +25,20 @@
                             </group>
                         </group>
                         <notebook>
-                            <page string="Architecture">
+                            <page string="Post">
 
                             </page>
-                            <page string="Access Rights">
+                            <page string="Messenger">
                                 <field name="value2"/>
                             </page>
                         </notebook>
                     </sheet>
                 </form>
+
+
             </field>
         </record>
 
-        <record model="ir.ui.view" id="facebook_sales.tree">
-            <field name="name">facebook_sales tree</field>
-            <field name="model">facebook_sales.facebook_sales</field>
-            <field name="arch" type="xml">
-                <tree>
-                    <field name="name"/>
-                    <field name="value"/>
-                </tree>
-            </field>
-        </record>
 
         <!-- actions opening views on models -->
         <record model="ir.actions.act_window" id="facebook_sales.action_window">

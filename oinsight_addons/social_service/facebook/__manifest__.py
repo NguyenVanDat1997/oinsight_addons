@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 {
-    'name': "facebook_sales",
+    'name': "facebook",
 
     'summary': """
         Short (1 phrase/line) summary of the module's purpose, used as
@@ -18,20 +18,15 @@
     # for the full list
     'category': 'Uncategorized',
     'version': '0.1',
-    'description': "",
+
     # any module necessary for this one to work correctly
-    'depends': ['base'],
-    'installable': True,
+    'depends': ['sale_stock'],
+
     # always loaded
     'data': [
         # 'security/ir.model.access.csv',
-        # 'views/views.xml',
-        # 'views/templates.xml',
-        'views/facebook_view.xml',
+        'views/facebook_menu.xml',
     ],
-    # only loaded in demonstration mode
-    'demo': [
-        'demo/demo.xml',
-    ],
-    'application': True
+    'qweb': ['static/src/xml/*.xml'],
+    'application': True,
 }
