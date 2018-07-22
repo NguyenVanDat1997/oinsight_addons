@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<openerp>
+    <data>
+        <template id="assets_backend" name="page_assets" inherit_id="web.assets_backend">
+            <xpath expr="." position="inside">
+                <link rel="stylesheet" href="/facebook/static/src/css/page.css"/>
+                <link rel="stylesheet" href="/facebook/static/src/css/responsive_tabs.css" />
+                <script type="text/javascript" src="/facebook/static/src/js/facebook_page.js"/>
+                <script type="text/javascript" src="/facebook/static/src/js/responsive_tabs.js"/>
+            </xpath>
+        </template>
+
+        <menuitem id="main_facebook_menu" name="Facebook" web_icon="facebook,static/description/facebook-icon.png"/>
+
+        <record id="action_facebook_page" model="ir.actions.client">
+            <field name="name">Facebook Page</field>
+            <field name="tag">page</field>
+        </record>
+
+        <menuitem id="home_page_facebook_menu" name="Page" parent="main_facebook_menu"
+            action="action_facebook_page"/>
+        
+    </data>
+</openerp>
