@@ -1,2 +1,0 @@
-id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
-access_custom_web_client_custom_web_client,custom_web_client.custom_web_client,model_custom_web_client_custom_web_client,,1,0,0,0
